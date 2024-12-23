@@ -1,0 +1,79 @@
+.nike-your-self-card-main-container {
+    position: relative;
+    width: 28vw;
+    height: 20vw;
+    background: linear-gradient(86deg, #00000031 0%, #35353521 100%, #000000 0%);
+    border-radius: 1.4vw;
+    backdrop-filter: blur(4px);
+    box-shadow: inset 1px 1px 2px #000, 1px 1px 2px #9A9A9A;
+    padding: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg-blured-circle {
+        position: absolute;
+        width: 24.2vw;
+        height: 16.2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        // border: 1px solid #fff;
+        border-radius: 1.2vw;
+
+
+        .inner-bg-circle {
+            width: 26vw;
+            min-height: 26vw;
+            // background: radial-gradient(circle, #928f88d8 0%, #ffffff00 100%);
+            // background-color: #1D7CA6;
+            // background-color: #6F411E;
+            border-radius: 50%;
+            filter: blur(10px);
+
+        }
+    }
+
+    .inner-content-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // background-color: #fff;
+        border-radius: 1.2vw;
+        background: linear-gradient(circle, #928f88 0%, #ffffff00 100%);
+        backdrop-filter: blur(10px);
+        // background-color: #ffee0050;
+        // background-color: #ffffff09;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .athlete-img {
+            width: 115%;
+            object-fit: contain;
+            transform-origin:bottom;
+            transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
+    .bottom-text-content {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 35%;
+        // background-color: #fff;
+        text-align: center;
+        color: #fff;
+        padding: 2% 4%;
+        font-size: clamp(0.2rem, 1.1vw, 1.1rem);
+        backdrop-filter: blur(8px);
+        line-height: 1.5;
+    }
+}

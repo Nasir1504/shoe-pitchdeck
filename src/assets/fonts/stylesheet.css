@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('FuturaBT-Medium.eot');
+    src: url('FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FuturaBT-Medium.woff2') format('woff2'),
+        url('FuturaBT-Medium.woff') format('woff'),
+        url('FuturaBT-Medium.ttf') format('truetype'),
+        url('FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('FuturaBT-Light.eot');
+    src: url('FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
+        url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff'),
+        url('FuturaBT-Light.ttf') format('truetype'),
+        url('FuturaBT-Light.svg#FuturaBT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('FuturaBT-Heavy.eot');
+    src: url('FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FuturaBT-Heavy.woff2') format('woff2'),
+        url('FuturaBT-Heavy.woff') format('woff'),
+        url('FuturaBT-Heavy.ttf') format('truetype'),
+        url('FuturaBT-Heavy.svg#FuturaBT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LtCn BT';
+    src: url('FuturaBT-LightCondensed.eot');
+    src: url('FuturaBT-LightCondensed.eot?#iefix') format('embedded-opentype'),
+        url('FuturaBT-LightCondensed.woff2') format('woff2'),
+        url('FuturaBT-LightCondensed.woff') format('woff'),
+        url('FuturaBT-LightCondensed.ttf') format('truetype'),
+        url('FuturaBT-LightCondensed.svg#FuturaBT-LightCondensed') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

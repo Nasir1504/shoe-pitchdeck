@@ -1,0 +1,59 @@
+.polygon-vector-comp-main-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid #fff;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: 0.8s;
+    border-radius: 50%;
+    // background-color: #fff000;
+
+
+    .polygon-vector-inner {
+        position: relative;
+        min-width: 120%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid blue;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        transition: 0.4s;
+
+        .bg-color-ract {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // background-color: #4a04ee;
+            z-index: 1;
+            transition: 0.8s;
+
+        }
+
+        .bg-color-ract2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // background-color: #4a04ee;
+            z-index: 0;
+            transition: 0.8s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .profile-img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+        }
+    }
+}

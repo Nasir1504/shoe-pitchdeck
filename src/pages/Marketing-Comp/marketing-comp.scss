@@ -1,0 +1,408 @@
+.marketing-comp-main-container {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+
+
+    .heading-section {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-heading {
+            width: 55%;
+            height: 60%;
+            // border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(0.4rem, 3.2vw, 3.2rem);
+            font-weight: 300;
+
+            .h-part {
+                position: relative;
+                width: 15vw;
+                height: 5vw;
+                background-color: #0000008e;
+                box-shadow: 4px 0px 5px #0000008e;
+                padding-right: 0.2em;
+                transition: 0.6s cubic-bezier(.45, 1.09, .57, 1.11);
+                display: flex;
+                justify-content: flex-start;
+
+                .span1 {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.6s ease-in-out;
+                    clip: rect(0px, 0px, 200px, 50px);
+
+                    strong {
+                        height: 100%;
+                        color: #AA0009;
+                        font-size: clamp(0.4rem, 4.2vw, 4.2rem);
+                        font-family: 'Futura Hv BT', sans-serif;
+                        font-weight: 600;
+                    }
+
+                    .span2 {
+                        border-bottom: 0.15vw solid #fff;
+                    }
+                }
+            }
+
+            .h-one {
+                z-index: 2;
+
+                .span1 {
+                    margin-left: 10%;
+
+                }
+            }
+
+            .h-two {
+                margin-left: -1.5em;
+                z-index: 1;
+
+                // .span1 {
+                //     strong {}
+                // }
+            }
+
+            .h-three {
+                margin-left: -1.5em;
+                z-index: 0;
+
+                // .span1 {
+                //     strong {}
+                // }
+            }
+        }
+    }
+
+    .bottom-section {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+
+        .foot-path-section {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // transition: 0.4s cubic-bezier(.45, 1.09, .57, 1.11);
+
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: 25vw 25vw;
+            z-index: 1;
+
+            .foot-path-mask-img {
+                position: absolute;
+                width: 100%;
+                object-fit: contain;
+                opacity: 0.4;
+                z-index: 0;
+            }
+
+            .nike-logo-mask-img {
+                position: absolute;
+                width: 80%;
+                object-fit: contain;
+                opacity: 0.4;
+            }
+
+            .year-card {
+                position: absolute;
+                width: 10vw;
+                height: 10vw;
+                // border: 1px solid #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                z-index: 1;
+
+                .top-frame {
+                    width: 100%;
+                    height: 75%;
+                    // border: 1px solid #fff;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .bottom-text {
+                    width: 100%;
+                    height: 20%;
+                    font-family: 'Futura Hv BT', sans-serif;
+                    font-size: clamp(0.4rem, 1.8vw, 1.8rem);
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+
+            .year-card-one {
+                left: 8%;
+                margin-top: -32vh;
+            }
+
+            .year-card-two {
+                left: 32%;
+                margin-top: -50vh;
+            }
+
+            .year-card-three {
+                left: 57%;
+                margin-top: -46vh;
+            }
+
+            .year-card-four {
+                left: 80%;
+                margin-top: -34vh;
+            }
+
+            // --------------------------------
+            .year-card-five {
+                left: 18%;
+                margin-bottom: -36vh;
+            }
+
+            .year-card-six {
+                left: 45%;
+                margin-bottom: -40vh;
+            }
+
+            .year-card-seven {
+                left: 72%;
+                margin-bottom: -38vh;
+            }
+        }
+
+        .card-detail {
+            position: absolute;
+            width: 29.5vw;
+            height: 12vw;
+            // border: 1px solid #fff;
+            display: flex;
+            transition: 0.5s cubic-bezier(.45, 1.09, .57, 1.17);
+
+            .hv-text {
+                position: relative;
+                font-family: "Futura Hv BT", sans-serif;
+                font-size: clamp(0.4rem, 5vw, 5rem);
+                color: #BB0B14;
+                text-shadow: 0vw 1vw 8px #000;
+                z-index: 1;
+
+            }
+
+            .lt-text {
+                position: absolute;
+                min-width: 100%;
+                font-family: "Futura Hv BT", sans-serif;
+                font-size: clamp(0.4rem, 3vw, 3rem);
+                color: #BB0B14;
+                left: 32%;
+                bottom: 5%;
+
+                .span1 {
+                    .inner-span1 {
+                        font-size: clamp(0.4rem, 1.5vw, 1.5rem);
+
+                    }
+
+                    .inner-span2 {
+                        font-family: "Futura Hv BT", sans-serif;
+                        font-size: clamp(0.4rem, 3vw, 3rem);
+                        color: #fff;
+                    }
+                }
+
+                .span2 {
+                    font-family: "Futura Hv BT", sans-serif;
+                    color: #fff;
+
+                    .inner-span1 {
+                        font-size: clamp(0.4rem, 1.8vw, 1.8rem);
+
+                    }
+
+                }
+
+            }
+        }
+
+        .card-one-detail {
+            top: 20%;
+            right: 20%;
+            // opacity: 0;
+            transform: translate(70vw);
+
+        }
+
+        .card-two-detail {
+            top: 30%;
+            right: 20%;
+            // opacity: 0;
+            transform: translate(70vw);
+
+        }
+
+        .card-three-detail {
+            top: 30%;
+            right: 15%;
+            // opacity: 0;
+            transform: translate(70vw);
+
+        }
+
+        .card-four-detail {
+            top: 30%;
+            left: 5%;
+            // opacity: 0;
+            transform: translate(-70vw);
+
+        }
+
+        .card-five-detail {
+            top: 30%;
+            left: 15%;
+            // opacity: 0;
+            transform: translate(-70vw);
+
+        }
+
+        .card-six-detail {
+            top: 30%;
+            left: 15%;
+            // opacity: 0;
+            transform: translate(-70vw);
+
+        }
+
+        .card-seven-detail {
+            top: 30%;
+            left: 15%;
+            // opacity: 0;
+            transform: translate(-70vw);
+
+        }
+
+    }
+
+    .bottom-section-upper-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid #fff;
+        // background-color: #ffffff58;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .foot-path-img {
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            object-fit: contain;
+            opacity: 0.1;
+            transition: 1.2s cubic-bezier(.45, 1.09, .57, 1.11) 0.4s;
+            clip: rect(0px, 0vw, 400vh, 0px);
+            // clip: rect(0px, 100vw, 400vh, 0vw);
+
+        }
+
+        .year-card {
+            position: absolute;
+            width: 10vw;
+            height: 10vw;
+            // border: 1px solid #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            z-index: 1;
+
+            .top-frame {
+                width: 100%;
+                height: 75%;
+                // border: 1px solid #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                // visibility: hidden;
+            }
+
+            .bottom-text {
+                width: 100%;
+                height: 20%;
+                font-family: 'Futura Hv BT', sans-serif;
+                font-size: clamp(0.4rem, 1.8vw, 1.8rem);
+                font-weight: 600;
+                text-align: center;
+                display: none;
+            }
+        }
+
+        .year-card-one {
+            left: 8%;
+            margin-top: -32vh;
+        }
+
+        .year-card-two {
+            left: 32%;
+            margin-top: -50vh;
+        }
+
+        .year-card-three {
+            left: 57%;
+            margin-top: -46vh;
+        }
+
+        .year-card-four {
+            left: 80%;
+            margin-top: -34vh;
+        }
+
+        // --------------------------------
+        .year-card-five {
+            left: 18%;
+            margin-bottom: -36vh;
+        }
+
+        .year-card-six {
+            left: 45%;
+            margin-bottom: -40vh;
+        }
+
+        .year-card-seven {
+            left: 72%;
+            margin-bottom: -38vh;
+        }
+    }
+
+
+}

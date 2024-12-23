@@ -1,0 +1,261 @@
+.competition-comp-main-container {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+
+    .heading-section {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // border: 1px solid #fff;
+
+        .heading-text {
+            font-size: clamp(0.8rem, 2.5vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 0.8em;
+
+            .span1 {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                padding-right: 0.2em;
+            }
+
+            .span2 {
+                color: #BB0B14;
+                border-bottom: 1px solid #BB0B14;
+            }
+        }
+    }
+
+    .main-content-section {
+        position: relative;
+        // top: 20%;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: #fff;
+        // border: 1px solid #fff;
+
+        .content-section {
+            position: relative;
+            width: 75%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content-section-inner-part {
+                position: relative;
+                width: 80%;
+                height: 95%;
+                border: 1px solid #e9b32b59;
+                border-radius: 1.2vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                overflow: hidden;
+
+                .logo-img-style {
+                    position: absolute;
+                    width: 30%;
+                    // height: 20%;
+                    // border: 1px solid #fff;
+                    object-fit: contain;
+                    z-index: 1;
+                    transition: 0.25s ease-in-out
+                }
+
+                .card {
+                    width: 50%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    // background-color: #fff;
+                    transition: 0.25s ease-in-out
+                }
+
+                .nike-logo-circle {
+                    position: absolute;
+                    width: 6vw;
+                    height: 6vw;
+                    border-radius: 50%;
+                    border: 1px solid #e9b32b59;
+                    background-color: #000;
+                    z-index: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nike-logo {
+                        width: 65%;
+                        object-fit: contain;
+                        transition: 0.25s ease-in-out
+                    }
+                }
+
+                .card-one {
+                    border-top-left-radius: 1.2vw;
+                    // cursor: pointer;
+
+                    .upper-part {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(140deg, rgba(13, 13, 13, 1) 40%, rgba(115, 115, 115, 0.589) 100%);
+                        font-size: clamp(0.2rem, 1.4vw, 1.4rem);
+                        border-top-left-radius: 1.2vw;
+                    }
+
+                    .bottom-part {
+                        width: 100%;
+                        height: 80%;
+                        border-bottom: 1px solid #e9b32b59;
+                        border-top: 1px solid #e9b32b59;
+                        position: relative;
+
+                        .adidas-logo-img {
+                            @extend .logo-img-style;
+                            left: 10%;
+                            top: 10%;
+                        }
+
+                        .under-armour-logo-img {
+                            @extend .logo-img-style;
+                            right: 35%;
+                            bottom: 8%;
+                        }
+
+                        .puma-logo-img {
+                            @extend .logo-img-style;
+                            right: 15%;
+                            top: 25%;
+                        }
+                    }
+                }
+
+                .card-two {
+                    border-top-right-radius: 1.2vw;
+
+                    .upper-part {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(-140deg, rgba(13, 13, 13, 1) 40%, rgba(115, 115, 115, 0.589) 100%);
+                        font-size: clamp(0.2rem, 1.4vw, 1.4rem);
+                        border-top-right-radius: 1.2vw;
+                        border-left: 1px solid #e9b32b;
+                    }
+
+                    .bottom-part {
+                        width: 100%;
+                        height: 80%;
+                        border-left: 1px solid #e9b32b59;
+                        border-top: 1px solid #e9b32b59;
+                        position: relative;
+
+                        .louis-vuitton-logo-img {
+                            @extend .logo-img-style;
+                            width: 35%;
+                            right: 15%;
+                            top: 20%;
+                        }
+
+                        .gucci-logo-img {
+                            @extend .logo-img-style;
+                            left: 30%;
+                            bottom: 20%;
+                            transform: scale(1.25)
+                        }
+                    }
+                }
+
+                .card-three {
+                    border-bottom-left-radius: 1.2vw;
+
+                    .upper-part {
+                        width: 100%;
+                        height: 80%;
+                        border-bottom: 1px solid #e9b32b59;
+                        position: relative;
+
+                        .other-brands-logo-img {
+                            @extend .logo-img-style;
+                            width: 40%;
+                            left: 30%;
+                            top: 40%;
+                        }
+                    }
+
+                    .bottom-part {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(40deg, rgba(13, 13, 13, 1) 40%, rgba(115, 115, 115, 0.589) 100%);
+                        font-size: clamp(0.2rem, 1.4vw, 1.4rem);
+                        border-bottom-left-radius: 1.2vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .card-four {
+                    border-bottom-right-radius: 1.2vw;
+
+                    .upper-part {
+                        width: 100%;
+                        height: 80%;
+                        border-left: 1px solid #e9b32b59;
+                        border-top: 1px solid #e9b32b59;
+                        position: relative;
+
+                        .startups-logo-img {
+                            @extend .logo-img-style;
+                            left: 40%;
+                            top: 40%;
+                            transform: scale(1.6)
+                        }
+                    }
+
+                    .bottom-part {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(-40deg, rgba(13, 13, 13, 1) 40%, rgba(115, 115, 115, 0.589) 100%);
+                        font-size: clamp(0.2rem, 1.4vw, 1.4rem);
+                        border-bottom-right-radius: 1.2vw;
+                        border-left: 1px solid #e9b32b;
+                        border-top: 1px solid #e9b32b59;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

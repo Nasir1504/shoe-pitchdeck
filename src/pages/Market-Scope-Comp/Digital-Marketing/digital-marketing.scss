@@ -1,0 +1,80 @@
+.digital-marketing-main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #fff000;
+    transition: 0.5s ease-in-out;
+
+
+    .slider-one,
+    .slider-two,
+    .slider-three {
+        // width: 100%;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-one,
+        .img-two,
+        .img-three {
+            width: 100%;
+            min-height: 100%;
+            border: 1px solid #000;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+
+        .img-one {
+            background-color: #47c5f7;
+        }
+
+        .img-two {
+            background-color: #1b2852;
+        }
+
+        .img-three {
+            background-color: #296640;
+        }
+
+
+    }
+
+    @keyframes scrollKF1 {
+        to {
+            transform: translateY(calc(-300%));
+        }
+    }
+
+    @keyframes scrollKF2 {
+        to {
+            transform: translateY(calc(300%));
+        }
+    }
+
+
+    .slider-one {
+        animation: scrollKF1 20s linear infinite;
+        justify-content: flex-start;
+
+    }
+
+    .slider-two {
+        animation: scrollKF2 20s linear infinite;
+        justify-content: flex-end;
+
+    }
+
+    .slider-three {
+        animation: scrollKF1 20s linear infinite;
+        justify-content: flex-start;
+
+    }
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('./assets/fonts/FuturaBT-Medium.eot');
+    src: url('./assets/fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/FuturaBT-Medium.woff2') format('woff2'),
+        url('./assets/fonts/FuturaBT-Medium.woff') format('woff'),
+        url('./assets/fonts/FuturaBT-Medium.ttf') format('truetype'),
+        url('./assets/fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('./assets/fonts/FuturaBT-Light.eot');
+    src: url('./assets/fonts/FuturaBT-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/FuturaBT-Light.woff2') format('woff2'),
+        url('./assets/fonts/FuturaBT-Light.woff') format('woff'),
+        url('./assets/fonts/FuturaBT-Light.ttf') format('truetype'),
+        url('./assets/fonts/FuturaBT-Light.svg#FuturaBT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('./assets/fonts/FuturaBT-Heavy.eot');
+    src: url('./assets/fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/FuturaBT-Heavy.woff') format('woff'),
+        url('./assets/fonts/FuturaBT-Heavy.ttf') format('truetype'),
+        url('./assets/fonts/FuturaBT-Heavy.svg#FuturaBT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LtCn BT';
+    src: url('./assets/fonts/FuturaBT-LightCondensed.eot');
+    src: url('./assets/fonts/FuturaBT-LightCondensed.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/FuturaBT-LightCondensed.woff2') format('woff2'),
+        url('./assets/fonts/FuturaBT-LightCondensed.woff') format('woff'),
+        url('./assets/fonts/FuturaBT-LightCondensed.ttf') format('truetype'),
+        url('./assets/fonts/FuturaBT-LightCondensed.svg#FuturaBT-LightCondensed') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Futura Lt BT", sans-serif;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+}
+
+@media screen and (max-device-width: 950px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

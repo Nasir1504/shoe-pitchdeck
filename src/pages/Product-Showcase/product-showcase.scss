@@ -1,0 +1,267 @@
+.product-showcase-main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+
+    .hidden-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // background-color: #fff;
+        z-index: 3;
+    }
+
+    // p {
+    //     position: absolute;
+    //     z-index: 5;
+    //     color: #000;
+    //     top: 10%;
+    //     left: 5%;
+
+    // }
+
+    .bg-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        filter: blur(6px);
+        transition: opacity 100ms ease-in-out;
+
+
+        .bg-img {
+            width: 100%;
+            object-position: center;
+            object-fit: contain;
+            // opacity: 0;
+            transition: opacity 100ms ease-in-out;
+        }
+
+        .loaded::before {
+            content: none;
+            animation: none;
+        }
+
+        .loaded>img {
+            opacity: 1;
+        }
+    }
+
+    .shoebox-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // background-color: #fff;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .inner-shoebox {
+            position: relative;
+            width: 24vw;
+            // height: 24vw;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background-color: #fff;
+            margin-top: 15vw;
+            transition: 0.5s ease-in-out;
+            transform-origin: center;
+            z-index: 1;
+
+            .shoe-box-top-img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+                transition: 0.8s cubic-bezier(.26, .82, .57, 1.01);
+                transform: translateY(-80vh);
+
+            }
+
+            .shoe-box-bottom-img {
+                position: relative;
+                z-index: 0;
+                width: 98%;
+                object-fit: contain;
+                object-position: center;
+                margin-top: -0.5%;
+                transition: 0.8s cubic-bezier(.26, .82, .57, 1.01);
+                transform: translateY(60vh);
+
+            }
+
+        }
+
+        .nike-shoe {
+            position: absolute;
+            width: 24vw;
+            height: 14vw;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background-color: #fff;
+            margin-top: 15vw;
+            transition: 0.8s cubic-bezier(.26, .82, .57, 1.01);
+            transform-origin: center;
+            z-index: 0;
+            opacity: 0;
+            transform: scale(0.4) rotate(-20deg) translateY(-2.8vw);
+            // transform: scale(1) rotate(-20deg) translateY(-2.8vw);
+            // transform: scale(1.8) rotate(-16deg) translateY(-2.8vw);
+            // transform: scale(1.8) rotate(-8deg) translateY(-2.8vw);
+            // transform: scale(0.8) rotate(-8deg) translateY(-2.8vw);
+            // transform: scale(0.8) rotate(-16deg) translateY(-2.8vw);
+
+
+
+
+
+            .nike-shoe-img {
+                position: absolute;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .nike-shoe-red-logo-img {
+                position: absolute;
+                width: 100%;
+                object-fit: contain;
+                opacity: 0;
+                transition: 0.4s cubic-bezier(.26, .82, .57, 1.01);
+
+            }
+        }
+
+    }
+
+    .showcase-shoe-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .showcase-shoe-img {
+            position: absolute;
+            width: 100%;
+            object-fit: contain;
+            transition: 0.5s ease-in-out;
+            opacity: 0;
+            filter: blur(2px);
+
+
+        }
+
+        .showcase-shoecase-img {
+            position: absolute;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .showcase-boxes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .showcase-boxes-img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .showcase-shoe-lighting {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0;
+        // background-color: #fff;
+        transition: 1.2s cubic-bezier(.26, .82, .57, 1.01);
+        clip: rect(0px, 100vw, 0vh, 0px);
+
+
+        .showcase-lighting-img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .showcase-heading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .showcase-heading-img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .showcase-sub-heading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .showcase-sub-heading-img {
+            width: 92%;
+            object-fit: contain;
+            opacity: 0;
+            transition: 0.8s ease-in-out;
+            transform: scale(0.6) translateY(-2vw);
+        }
+    }
+
+    .just-do-it {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0;
+
+        .just-do-it-img {
+            width: 94%;
+            object-fit: contain;
+        }
+    }
+}
